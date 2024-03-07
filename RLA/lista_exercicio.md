@@ -9,7 +9,7 @@
 flowchart TD
 A([Início]) --> B{{Digite suas notas:}}
 B --> C[/N1, N2/]
-C --> D[M = N1 + N2 / 2]
+C --> D[M = (N1 + N2) / 2]
 D --> E{M >= 7}
 E --NÃO--> F[Reprovado]
 F --> H([Fim])
