@@ -10,7 +10,7 @@ flowchart TD
 A([Início]) --> B{{Digite suas notas:}}
 B --> C[/N1, N2/]
 C --> D[M = N1 + N2 / 2]
-D --> E{M >= 4}
+D --> E{M >= 7}
 E --NÃO--> F[Reprovado]
 F --> H([Fim])
 E --SIM--> G[Aprovado]
@@ -23,7 +23,7 @@ G --> H
 3 ESCREVA "Digite suas notas" 
 4 LEIA N1, N2
 5 M = (N1 + N2) / 2
-6 SE M >= 4 ENTÃO
+6 SE M >= 7 ENTÃO
 8 	ESCREVA "Aprovado"
 9 SENÃO
 10 	ESCREVA "Reprovado"
