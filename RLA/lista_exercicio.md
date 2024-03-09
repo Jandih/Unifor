@@ -40,7 +40,7 @@ B --> C[/X/]
 C --> D{X <= 500}
 D --NÃO--> E[Y = 1.10 * X]
 D --SIM--> F[Y = 1.20 * X]
-E --> G[Novo salário: Y]
+E --> G[Novo salário:, Y]
 F --> G
 G --> H([Fim])
 ````
