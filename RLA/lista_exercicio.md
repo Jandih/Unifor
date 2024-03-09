@@ -20,14 +20,15 @@ G --> H
 ````
 1 ALGORITMO calcular_média
 2 DECLARE N1, N2, M: NÚMERICO
-3 ESCREVA "Digite suas notas" 
-4 LEIA N1, N2
-5 M = (N1 + N2) / 2
-6 SE M >= 7 ENTÃO
+3 INÍCIO
+4 ESCREVA "Digite suas notas" 
+5 LEIA N1, N2
+6 M = (N1 + N2) / 2
+7 SE M >= 7 ENTÃO
 8 	ESCREVA "Aprovado"
 9 SENÃO
 10 	ESCREVA "Reprovado"
-11 FIM_ALGORITMO
+11 FIM
 ````
 
 ## Exercício 2
@@ -47,14 +48,15 @@ G --> H([Fim])
 ````
 1 ALGORITMO calcular_novo_salário
 2 DECLARE X, Y: NÚMERICO
-3 ESCREVA "Digite o salário atual:" 
-4 LEIA X
-5 SE X <= 500
-6 	ENTÃO Y = 1.20 * X
-7 SENÃO
-8 	Y  = 1.10 * X
-9 ESCREVA "Novo salário:", Y
-10 FIM_ALGORITMO
+3 INÍCIO
+4 ESCREVA "Digite o salário atual:" 
+5 LEIA X
+6 SE X <= 500
+7 	ENTÃO Y = 1.20 * X
+8 SENÃO
+9 	Y  = 1.10 * X
+10 ESCREVA "Novo salário:", Y
+11 FIM
 ````
 
 ## Exercício 3
@@ -77,17 +79,18 @@ I --> Z
 ````
 1 ALGORITMO verificar_par_impar
 2 DECLARE Número, Resto: NÚMERICO
-3 ESCREVA "Digite um número" 
-4 LEIA Número
-5 SE Número > 0
-6 	Resto = Número % 2
-7 	SE Resto == 0 ENTÃO
-8 		ESCREVA "O número é par"
-9 	SENÃO
-10 		ESCREVA "O número é impar"
-11 SENÃO
-12 	ESCREVA "O número não é positivo"
-13 FIM_ALGORITMO
+3 INÍCIO
+4 ESCREVA "Digite um número" 
+5 LEIA Número
+6 SE Número > 0
+7 	Resto = Número % 2
+8 	SE Resto == 0 ENTÃO
+9 		ESCREVA "O número é par"
+10 	SENÃO
+11 		ESCREVA "O número é impar"
+12 SENÃO
+13 	ESCREVA "O número não é positivo"
+14 FIM
 ````
 
 ## Exercício 4
@@ -107,12 +110,13 @@ E --> H([Fim])
 ````
 1 ALGORITMO determinar_cnh
 2 DECLARE I, anos_faltam: NÚMERICO
-3 ESCREVA "Insira a idade:" 
-4 LEIA I
-5 SE I >= 18 ENTÃO
-6 	ESCREVA "Pode tirar a CNH"
-7 SENÃO
-8 	anos_faltam = 18 - I
-9 	ESCREVA "Faltam", anos_faltam, "ano(s) para tirar a CNH"
-10 FIM_ALGORITMO
+3 INÍCIO
+4 ESCREVA "Insira a idade:" 
+5 LEIA I
+6 SE I >= 18 ENTÃO
+7 	ESCREVA "Pode tirar a CNH"
+8 SENÃO
+9 	anos_faltam = 18 - I
+10 	ESCREVA "Faltam", anos_faltam, "ano(s) para tirar a CNH"
+11 FIM
 ````
