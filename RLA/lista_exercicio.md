@@ -11,9 +11,9 @@ A([Início]) --> B{{Digite suas notas:}}
 B --> C[\N1, N2\]
 C --> D[M = N1 + N2 / 2]
 D --> E{M >= 7}
-E --NÃO--> F[Reprovado]
+E --NÃO--> F{Reprovado}
 F --> H([Fim])
-E --SIM--> G[Aprovado]
+E --SIM--> G{Aprovado}
 G --> H
 ````
 ### Pseudocódigo
@@ -40,7 +40,7 @@ B --> C[\X\]
 C --> D{X <= 500}
 D --NÃO--> E[Y = 1.10 * X]
 D --SIM--> F[Y = 1.20 * X]
-E --> G[Novo salário:, Y]
+E --> G{Novo salário:, Y}
 F --> G
 G --> H([Fim])
 ````
@@ -100,9 +100,9 @@ flowchart TD
 A([Início]) --> B{{Insira a idade:}}
 B --> C[\I\]
 C --> D{I >= 18}
-D --SIM--> E[Pode tirar a CNH]
+D --SIM--> E{Pode tirar a CNH}
 D --NÃO--> F[anos_faltam = 18 - I]
-F --> G[Faltam, anos_faltam, anos para tirar a CNH]
+F --> G{Faltam, anos_faltam, anos para tirar a CNH}
 G --> H
 E --> H([Fim])
 ````
