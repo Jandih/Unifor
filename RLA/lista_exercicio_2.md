@@ -30,7 +30,7 @@ E --> F([Fim])
 ````mermaid
 flowchart TD
 A([Início]) --> B{{Informe o valor em Celsius:}}
-B --> C[/C/]
+B --> C[\C\]
 C --> D[F = 1.8 * C + 32]
 D --> E{{O resultado em Fahrenheit é:, F}}
 E --> F([Fim])
