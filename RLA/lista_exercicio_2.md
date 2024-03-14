@@ -24,3 +24,25 @@ E --> F([Fim])
 7 ESCREVA "A média é:", M
 8 FIM
 ````
+
+## Exercício 2
+### Fluxograma
+````mermaid
+flowchart TD
+A([Início]) --> B{{Informe o valor em Celsius:}}
+B --> C[/C/]
+C --> D[F = 1.8 * C + 32]
+D --> E{{O resultado em Fahrenheit é:, F}}
+E --> F([Fim])
+````
+### Pseudocódigo
+````
+1 ALGORITMO conversão_celsius_fahrenheit
+2 DECLARE C, F: REAL
+3 INÍCIO
+4 ESCREVA "Informe o valor em Celsius:"
+5 LEIA C
+6 F = 1.8 * C + 32
+7 ESCREVA "O resultado em Fahrenheit é:", F 
+8 FIM
+````
