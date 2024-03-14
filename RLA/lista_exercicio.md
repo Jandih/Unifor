@@ -36,7 +36,7 @@ G --> H
 ````mermaid
 flowchart TD
 A([Início]) --> B{{Digite o salário atual:}}
-B --> C[/X/]
+B --> C[\X\]
 C --> D{X <= 500}
 D --NÃO--> E[Y = 1.10 * X]
 D --SIM--> F[Y = 1.20 * X]
@@ -64,7 +64,7 @@ G --> H([Fim])
 ````mermaid
 flowchart TD
 A([Início]) --> B{{Digite seu número:}}
-B --> C[/Número/]
+B --> C[\Número\]
 C --> D{Número > 0}
 D --NÃO--> E[O número não é positivo]
 D --SIM--> F[Resto = número % 2]
@@ -98,7 +98,7 @@ I --> Z
 ````mermaid
 flowchart TD
 A([Início]) --> B{{Insira a idade:}}
-B --> C[/I/]
+B --> C[\I\]
 C --> D{I >= 18}
 D --SIM--> E[Pode tirar a CNH]
 D --NÃO--> F[anos_faltam = 18 - I]
