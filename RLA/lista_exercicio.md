@@ -92,6 +92,13 @@ I --> Z
 13 	ESCREVA "O número não é positivo"
 14 FIM
 ````
+## Teste de mesa
+numero	numero >= 0	resto	resto == 0	Saída
+-1	F			"O número deve ser postivo!"
+0	V	0	V	"O número é par!"
+13	V	1	F	"O número é impar!"
+30	V	0	V	"O número é par!"
+
 
 ## Exercício 4
 ### Fluxograma
