@@ -70,8 +70,8 @@ D --NÃO--> E[O número não é positivo]
 D --SIM--> F[Resto = número % 2]
 E --> Z([Fim])
 F --> G{Resto == 0}
-G --NÃO--> H[O número é impar]
-G --SIM--> I[O número é par]
+G --NÃO--> H{O número é impar}
+G --SIM--> I{O número é par}
 H --> Z
 I --> Z
 ````
