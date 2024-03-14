@@ -8,7 +8,7 @@
 ````mermaid
 flowchart TD
 A([Início]) --> B{{Informe suas notas:}}
-B --> C[/N1, N2, N3, N4/]
+B --> C[\N1, N2, N3, N4\]
 C --> D[M = N1 + N2 + N3 + N4 / 4]
 D --> E{{A média é:, M}}
 E --> F([Fim])
