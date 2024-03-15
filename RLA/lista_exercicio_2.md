@@ -7,11 +7,17 @@
 ### Fluxograma
 ````mermaid
 flowchart TD
-A([Início]) --> B{{Informe suas notas:}}
-B --> C[\N1, N2, N3, N4\]
-C --> D[M = N1 + N2 + N3 + N4 / 4]
-D --> E{{'A média é:', M}}
-E --> F([Fim])
+A([Início]) --> B{{Informe a primeira nota:}}
+B --> C[\N1\]
+C --> D{{Informe a segunda nota:}}
+D --> E[\N2\]
+E --> F{{Informe a terceira nota:}}
+F --> G[\N3\]
+G --> H{{Informe a quarta nota:}}
+H --> I[\N4\]
+I --> J[M = N1 + N2 + N3 + N4 / 4]
+J --> K{{'A média é:', M}}
+K --> L([Fim])
 ````
 ### Pseudocódigo
 ````
