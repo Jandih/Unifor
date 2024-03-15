@@ -28,7 +28,8 @@ G --> H
 8 	ESCREVA "Aprovado"
 9 SENÃO
 10 	ESCREVA "Reprovado"
-11 FIM
+11 FIM_SE
+12 FIM
 ````
 
 ## Exercício 2
@@ -55,8 +56,9 @@ G --> H([Fim])
 7 	ENTÃO Y = 1.20 * X
 8 SENÃO
 9 	Y  = 1.10 * X
-10 ESCREVA "Novo salário:", Y
-11 FIM
+10 FIM_SE
+11 ESCREVA "Novo salário:", Y
+12 FIM
 ````
 
 ## Exercício 3
@@ -90,7 +92,8 @@ I --> Z
 11 		ESCREVA "O número é impar"
 12 SENÃO
 13 	ESCREVA "O número não é positivo"
-14 FIM
+14 FIM_SE
+15 FIM
 ````
 
 ## Exercício 4
@@ -118,5 +121,6 @@ E --> H([Fim])
 8 SENÃO
 9 	anos_faltam = 18 - I
 10 	ESCREVA "Faltam", anos_faltam, "ano(s) para tirar a CNH"
-11 FIM
+11 FIM_SE
+12 FIM
 ````
