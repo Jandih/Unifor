@@ -10,7 +10,7 @@ flowchart TD
 A([Início]) --> B{{Informe suas notas:}}
 B --> C[\N1, N2, N3, N4\]
 C --> D[M = N1 + N2 + N3 + N4 / 4]
-D --> E{{A média é:, M}}
+D --> E{{'A média é:', M}}
 E --> F([Fim])
 ````
 ### Pseudocódigo
@@ -32,7 +32,7 @@ flowchart TD
 A([Início]) --> B{{Informe o valor em Celsius:}}
 B --> C[\C\]
 C --> D[F = 1.8 * C + 32]
-D --> E{{O resultado em Fahrenheit é:, F}}
+D --> E{{'O resultado em Fahrenheit é:', F}}
 E --> F([Fim])
 ````
 ### Pseudocódigo
