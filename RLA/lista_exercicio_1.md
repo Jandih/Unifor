@@ -23,15 +23,17 @@ J --> I
 1 ALGORITMO calcular_média
 2 DECLARE N1, N2, M: REAL
 3 INÍCIO
-4 ESCREVA "Digite suas notas" 
-5 LEIA N1, N2
-6 M = (N1 + N2) / 2
-7 SE M >= 7 ENTÃO
-8 	ESCREVA "Aprovado"
-9 SENÃO
-10 	ESCREVA "Reprovado"
-11 FIM_SE
-12 FIM
+4 ESCREVA "Digite a primeira nota:" 
+5 LEIA N1
+6 ESCREVA "Digite a segunda nota:"
+7 LEIA N2
+8 M = (N1 + N2) / 2
+9 SE M >= 7 ENTÃO
+10 	ESCREVA "Aprovado"
+11 SENÃO
+12 	ESCREVA "Reprovado"
+13 FIM_SE
+14 FIM
 ````
 
 ## Exercício 2
