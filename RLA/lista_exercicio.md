@@ -90,7 +90,7 @@ I --> Z
 9 		ESCREVA "O número é par"
 10   SENÃO
 11 		ESCREVA "O número é impar"
-12    FIM_SE
+12   FIM_SE
 13 SENÃO
 14 	ESCREVA "O número não é positivo"
 15 FIM_SE
