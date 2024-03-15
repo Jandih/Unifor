@@ -7,14 +7,16 @@
 ### Fluxograma
 ````mermaid
 flowchart TD
-A([Início]) --> B{{Digite suas notas:}}
-B --> C[\N1, N2\]
-C --> D[M = N1 + N2 / 2]
-D --> E{M >= 7}
-E --NÃO--> F{{Reprovado}}
-F --> H([Fim])
-E --SIM--> G{{Aprovado}}
-G --> H
+A([Início]) --> B{{Digite a primeira nota:}}
+B --> C[\N1\]
+C --> D{{Digite a segunda nota:}}
+D --> E[\N2\]
+E --> F[M = N1 + N2 / 2]
+F --> G{M >= 7}
+G --NÃO--> H{{Reprovado}}
+H --> I([Fim])
+G --SIM--> J{{Aprovado}}
+J --> I
 ````
 ### Pseudocódigo
 ````
@@ -68,7 +70,7 @@ flowchart TD
 A([Início]) --> B{{Digite seu número:}}
 B --> C[\Número\]
 C --> D{Número > 0}
-D --NÃO--> E[O número não é positivo]
+D --NÃO--> E{{O número não é positivo}}
 D --SIM--> F[Resto = número % 2]
 E --> Z([Fim])
 F --> G{Resto == 0}
