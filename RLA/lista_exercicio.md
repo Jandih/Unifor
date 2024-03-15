@@ -86,14 +86,15 @@ I --> Z
 5 LEIA Número
 6 SE Número > 0
 7 	Resto = Número % 2
-8 	SE Resto == 0 ENTÃO
+8   SE Resto == 0 ENTÃO
 9 		ESCREVA "O número é par"
-10 	SENÃO
+10   SENÃO
 11 		ESCREVA "O número é impar"
-12 SENÃO
-13 	ESCREVA "O número não é positivo"
-14 FIM_SE
-15 FIM
+12    FIM_SE
+13 SENÃO
+14 	ESCREVA "O número não é positivo"
+15 FIM_SE
+16 FIM
 ````
 
 ## Exercício 4
