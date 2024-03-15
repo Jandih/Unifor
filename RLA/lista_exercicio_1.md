@@ -19,7 +19,7 @@ G --> H
 ### Pseudocódigo
 ````
 1 ALGORITMO calcular_média
-2 DECLARE N1, N2, M: NÚMERICO
+2 DECLARE N1, N2, M: REAL
 3 INÍCIO
 4 ESCREVA "Digite suas notas" 
 5 LEIA N1, N2
@@ -48,7 +48,7 @@ G --> H([Fim])
 ### Pseudocódigo
 ````
 1 ALGORITMO calcular_novo_salário
-2 DECLARE X, Y: NÚMERICO
+2 DECLARE X, Y: REAL
 3 INÍCIO
 4 ESCREVA "Digite o salário atual:" 
 5 LEIA X
@@ -80,7 +80,7 @@ I --> Z
 ### Pseudocódigo
 ````
 1 ALGORITMO verificar_par_impar
-2 DECLARE Número, Resto: NÚMERICO
+2 DECLARE Número, Resto: INTEIRO
 3 INÍCIO
 4 ESCREVA "Digite um número" 
 5 LEIA Número
@@ -113,7 +113,7 @@ E --> H([Fim])
 ### Pseudocódigo
 ````
 1 ALGORITMO determinar_cnh
-2 DECLARE I, anos_faltam: NÚMERICO
+2 DECLARE I, anos_faltam: INTEIRO
 3 INÍCIO
 4 ESCREVA "Insira a idade:" 
 5 LEIA I
