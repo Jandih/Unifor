@@ -40,7 +40,7 @@ B --> C[\X\]
 C --> D{X <= 500}
 D --NÃO--> E[Y = 1.10 * X]
 D --SIM--> F[Y = 1.20 * X]
-E --> G{{Novo salário:, Y}}
+E --> G{{'Novo salário:', Y}}
 F --> G
 G --> H([Fim])
 ````
@@ -102,7 +102,7 @@ B --> C[\I\]
 C --> D{I >= 18}
 D --SIM--> E{{Pode tirar a CNH}}
 D --NÃO--> F[anos_faltam = 18 - I]
-F --> G{{Faltam, anos_faltam, anos para tirar a CNH}}
+F --> G{{'Faltam', anos_faltam, 'anos para tirar a CNH'}}
 G --> H
 E --> H([Fim])
 ````
