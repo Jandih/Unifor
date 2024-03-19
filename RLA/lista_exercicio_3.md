@@ -81,7 +81,7 @@ F --LOOP--> E
 ### Pseudocódigo
 ````
 1 ALGORITMO calculadora_simples
-2 DECLARE N1, N2, N3, N4, N5, N6, Soma: INTEIRO
+2 DECLARE N1, N2, N3, N4, N5, N6, soma, i: INTEIRO
 3 INÍCIO
 4 ESCREVA "Digite seis números para a sequência:"
 5 LEIA N1, N2, N3, N4, N5, N6
