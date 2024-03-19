@@ -87,7 +87,7 @@ F --LOOP--> E
 5 LEIA N1, N2, N3, N4, N5, N6
 6 soma = 0
 7 PARA i DE N1 ATÉ N6 FAÇA
-8 soma = soma + i
+8   soma = soma + i
 9 FIM_PARA
 10 ESCREVA "A soma da sequência é:", soma
 11 FIM
