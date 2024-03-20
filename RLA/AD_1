@@ -82,10 +82,10 @@ G --> M
 
 | It | A  | N  | cont | N<=A  | nota, N | nota | nota_valida | cont+1 | N+1 | Saída        | 
 | -- | -- | -- | --   | --    | --      | --   | --          | --     | --  | --           |
-| 1  | 3  | 1  |  0   | V | nota 1  | 60   | True        | 1      | 2   |              |
-| 2  | 3  | 2  |  1   | V | nota 2  | 40   | False       | 1      | 3   |              |
-| 3  | 3  | 3  |  1   | V | nota 3  | 90   | True        | 2      | 4   |              |
-| 4  | 3  | 4  |  2   | F |         |      |             |        |     | Aprovados: 2 |
+| 1  | 3  | 1  |  0   | V     | nota 1  | 60   | True        | 1      | 2   |              |
+| 2  | 3  | 2  |  1   | V     | nota 2  | 40   | False       | 1      | 3   |              |
+| 3  | 3  | 3  |  1   | V     | nota 3  | 90   | True        | 2      | 4   |              |
+| 4  | 3  | 4  |  2   | F     |         |      |             |        |     | Aprovados: 2 |
 
 ## Exercício 3
 ### Fluxograma
@@ -131,14 +131,14 @@ E --> J
 ````
 #### Teste de mesa
 
-| It | Q  | Q>=0 | soma | i  | i<=Q | N | soma =+ N  | Saída                   |
+| It | Q  | Q>=0   | soma | i  | i<=Q   | N   | soma =+ N    | Saída                   |
 | -- | -- | --     | --   | -- | --     | --  | --           | --                      |
-|    | -3 | F   |      |    |        |     |              | O valor deve ser ...    |
-| 1  | 0  | V   | 0    | 1  | F |     |              | A soma dos números é 0  |
-| 1  | 3  | V   | 0    | 1  | V   | 5   | 0 + 5 = 5    |                         |
-| 2  | 3  | V   | 5    | 2  | V   | 10  | 5 + 10 = 15  |                         |
-| 3  | 3  | V   | 15   | 3  | V  | 20  | 15 + 20 = 35 |                         |
-| 4  | 3  | V   | 35   | 4  | F  |     |              | A soma dos números é 35 |
+|    | -3 | F      |      |    |        |     |              | O valor deve ser ...    |
+| 1  | 0  | V      | 0    | 1  | F      |     |              | A soma dos números é 0  |
+| 1  | 3  | V      | 0    | 1  | V      | 5   | 0 + 5 = 5    |                         |
+| 2  | 3  | V      | 5    | 2  | V      | 10  | 5 + 10 = 15  |                         |
+| 3  | 3  | V      | 15   | 3  | V      | 20  | 15 + 20 = 35 |                         |
+| 4  | 3  | V      | 35   | 4  | F      |     |              | A soma dos números é 35 |
 
 ## Exercício 4
 ### Fluxograma
@@ -175,13 +175,13 @@ J --> L[S =+ t]
 ````
 #### Teste de mesa (0.25 ponto)
 
-| It | N  | S  | i | numerador | denominador | t | S += t     | Saída                  |
+| It | N  | S  | i | numerador | denominador | t     | S += t         | Saída                  |
 | -- | -- | -- |-- | --        | --          | --    | --             | --                     |
 |    | 0  | 0  |   |           |             |       |                |                        |
 | 1  | 4  | 0  | 0 | 2*0+1 = 1 | 2*0+2 = 2   | 1/2   | 0+1/2 = 1/2    |                        |
 | 2  | 4  | 0  | 1 | 2*1+1 = 1 | 2*1+2 = 2   | 3/4   | 1/2+3/4 = 1.25 |                        |
 | 3  | 4  | 0  | 2 | 2*2+1 = 1 | 2*2+2 = 2   | 5/6   | 0+1/2 = 2.08   |                        |
-| 4  | 4  | 0  | 3 | 2*3+1 = 1 | 2*3+2 = 2   | 7/8   | 0+1/2 = 2.96   | O valor de S é 2.96 |
+| 4  | 4  | 0  | 3 | 2*3+1 = 1 | 2*3+2 = 2   | 7/8   | 0+1/2 = 2.96   | O valor de S é 2.96    |
 
 ## Exercício 5
 ### Fluxograma
@@ -219,11 +219,11 @@ F --> M
 ````
 #### Teste de mesa
 
-| N  | R | i  | fator = fator * i | Saída               |
-| -- | --    | -- | --                | --                  |
-| 3  | 1     | 1  | 1 * 1 = 1           |                     |
-| 3  | 1     | 2  | 1 * 2 = 2           |                     |
-| 3  | 2     | 3  | 2 * 3 = 6           | O fatorial de 3 é 6 |
+| N  | R | i | fator = fator * i | Saída               |
+| -- | --| --| --                | --                  |
+| 3  | 1 | 1 | 1 * 1 = 1         |                     |
+| 3  | 1 | 2 | 1 * 2 = 2         |                     |
+| 3  | 2 | 3 | 2 * 3 = 6         | O fatorial de 3 é 6 |
 
 ## Exercício 6
 ### Fluxograma
@@ -269,8 +269,8 @@ H --> Y
 ````
 #### Teste de mesa
 
-| It | N  | a  | b  | i  | Saída | t=a+b | a=b | b=t|
-| -- | -- | -- | -- | -- | --    | --                  | --    | --              |
+| It | N  | a  | b  | i  | Saída | t=a+b           | a=b   | b=t             |
+| -- | -- | -- | -- | -- | --    | --              | --    | --              |
 | 1  | 5  | 0  | 1  | 1  | 0     | 0+1=1           | 1     | 1               |
 | 2  | 5  | 1  | 1  | 2  | 1     | 1+1=2           | 1     | 2               |
 | 3  | 5  | 1  | 2  | 3  | 1     | 1+2=3           | 2     | 3               |
@@ -318,11 +318,11 @@ H --> Y
 ````
 #### Teste de mesa
 
-| It | N | I | N > 0 | D | N = N // 10 | I = (I * 10) + D | Saída                       |
-| -- | --  | --      | --     | --      | --              | --                                | --                          |
-|    | -1  | 0       | F  |         |                 |                                   | O número deve ser positivo! |
-| 1  | 0   | 0       | F  |         |                 |                                   | Número invertido:: 0        |
-| 1  | 42  | 0       | V   | 2       | 4               | 2                                 |                             |
-| 2  | 4   | 2       | V   | 4       | 0               | 24                                |                             |
-| 3  | 0   | 24      | F  |         |                 |                                   | Número invertido:: 24       |
+| It | N   | I       | N > 0 | D       | N = N // 10     | I = (I * 10) + D                  | Saída                       |
+| -- | --  | --      | --    | --      | --              | --                                | --                          |
+|    | -1  | 0       | F     |         |                 |                                   | O número deve ser positivo! |
+| 1  | 0   | 0       | F     |         |                 |                                   | Número invertido:: 0        |
+| 1  | 42  | 0       | V     | 2       | 4               | 2                                 |                             |
+| 2  | 4   | 2       | V     | 4       | 0               | 24                                |                             |
+| 3  | 0   | 24      | F     |         |                 |                                   | Número invertido:: 24       |
 
