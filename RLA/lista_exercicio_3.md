@@ -97,29 +97,29 @@ F --LOOP--> E
 ### Fluxograma
 ````mermaid
 flowchart TD
-A([Início]) --> B{{Insira sua nota:}}
-B --> C[\N\]
-C --> D{N >= 0}
-D --F--> H[M = T / Q]
+A([Início]) --> B{{Insira a quantidade de alunos:}}
+B --> C[\Q\]
+M --> D{N >= 0}
+D --F--> H[M = soma / Q]
 H --> I{{'Foram lidas', Q, 'notas. A média aritmética é', M}}
 I --> J([Fim])
-D --V--> F[\Q\]
-F --> G[T = N1 + N2 + N3 ...]
-G --LOOP--> D
+D --V--> F[soma =+ N]
+F --LOOP--> D
+C --> K{{Digite as notas:}}
+K --> L[\N\]
+L --> M[soma = 0]
 ````
 ### Pseudocódigo
 ````
 1 ALGORITMO notas
-2 DECLARE Q: INTEIRO, N, T, M: REAL
+2 DECLARE Q: INTEIRO, N, soma, M: REAL
 3 INÍCIO
 4 ESCREVA "Insira sua nota:"
 5 LEIA N
 6 ENQUANTO N >= 0 FAÇA
-7 	LEIA Q
-8 	T = N1 + N2 + N3 ...
-9 FIM_ENQUANTO
-10 M = T / Q
-11 ESCREVA "Foram lidas", Q, "notas. A média aritmética é", M
-12 FIM
+7 	soma = soma + N 
+8 FIM_ENQUANTO
+9 M = soma / Q
+10 ESCREVA "Foram lidas", Q, "notas. A média aritmética é", M
+11 FIM
 ````
-
