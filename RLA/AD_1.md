@@ -256,7 +256,7 @@ H --> Y
 7 	a = 0
 8 	b = 1
 9 	PARA i DE 1 ATÉ N FAÇA
-10 		LEIA a
+10 		ESCREVA "a "
 12 		t = a + b
 13 		a = b
 14 		b = t
