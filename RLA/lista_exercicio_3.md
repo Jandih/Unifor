@@ -105,7 +105,7 @@ H --> I{{'Foram lidas', Q, 'notas. A média aritmética é', M}}
 I --> J([Fim])
 D --V--> F[soma =+ N]
 F --LOOP--> D
-C --> K{{Digite as notas:}}
+C --> K{{Digite a nota:}}
 K --> L[\N\]
 L --> M[soma = 0]
 ````
@@ -114,12 +114,15 @@ L --> M[soma = 0]
 1 ALGORITMO notas
 2 DECLARE Q: INTEIRO, N, soma, M: REAL
 3 INÍCIO
-4 ESCREVA "Insira sua nota:"
-5 LEIA N
-6 ENQUANTO N >= 0 FAÇA
-7 	soma = soma + N 
-8 FIM_ENQUANTO
-9 M = soma / Q
-10 ESCREVA "Foram lidas", Q, "notas. A média aritmética é", M
-11 FIM
+4 ESCREVA "Insira a quantidade de alunos:"
+5 LEIA Q
+6 ESCREVA "Digite a nota:"
+7 LEIA N
+8 soma = 0
+9 ENQUANTO N >= 0 FAÇA
+10 	soma = soma + N 
+11 FIM_ENQUANTO
+12 M = soma / Q
+13 ESCREVA "Foram lidas", Q, "notas. A média aritmética é", M
+14 FIM
 ````
