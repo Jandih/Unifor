@@ -158,7 +158,7 @@ J --> L[S =+ t]
 ````
 ### Pseudocódigo
 ````
-1 ALGORITMO 
+1 ALGORITMO soma_serie
 2 DECLARE N, numerador, denominador, i: INTEIRO; S, t: REAL
 3 INÍCIO
 4 ESCREVA "Digite o número de termos:" 
@@ -201,7 +201,7 @@ F --> M
 ````
 ### Pseudocódigo
 ````
-1 ALGORITMO fatorialie
+1 ALGORITMO fatorial
 2 DECLARE N, R, i: INTEIRO
 3 INÍCIO
 4 ESCREVA "Digite um número:" 
